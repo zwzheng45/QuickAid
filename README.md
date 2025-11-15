@@ -1,10 +1,10 @@
-# QuickAid — AI Emergency Navigation App
+# QuickAid — Emergency Navigation App
 
-QuickAid is an AI-powered emergency navigation tool designed to help international students, newcomers, and residents quickly find the fastest and most appropriate emergency department (A&E) during a medical crisis.
+QuickAid is an emergency navigation tool designed to help international students, newcomers, and residents quickly find the fastest and most appropriate emergency department (A&E) during a medical crisis.
 
 ---
 
-## 🚑 Overview
+## Overview
 
 QuickAid simplifies emergency healthcare by showing users:
 
@@ -16,21 +16,21 @@ It is built for people who are unfamiliar with the UK healthcare system — espe
 
 ---
 
-## ✨ Core Features
+## Core Features
 
-### 🔍 AI Emergency Locator
+### AI Emergency Locator
 
 - Shows nearby A&E departments, urgent care centres, and hospitals
 - Interactive map with essential info: address, opening hours, service type
 - Helps users quickly identify where care is available right now
 
-### 🛡 Insurance & Access Filter
+### Insurance & Access Filter
 
 - Select NHS / IHS (international student surcharge) / private insurance
 - QuickAid filters hospitals that accept your coverage
 - Prevents unexpected fees and helps newcomers understand their options
 
-### ⚡ QuickRoute AI (Smart Hospital Ranking)
+### QuickRoute AI (Smart Hospital Ranking)
 
 QuickRoute AI analyses each hospital's real-time situation (expected wait time, crowd level, current patient load) and recommends the hospital that minimises the total time until being seen — not necessarily the geographically nearest.
 
@@ -41,11 +41,11 @@ Example:
 
 QuickAid recommends St Thomas’ because the total time to be seen is shortest.
 
-### 🚨 Safety Check Gate
+### Safety Check Gate
 
 On app start QuickAid runs a short safety triage asking about life‑threatening symptoms (chest pain, breathing difficulty, severe bleeding, sudden vision loss, etc.). If the user reports any of these, QuickAid immediately advises calling `999` or going to the nearest A&E.
 
-### 📄 Context-Aware Checklist
+### Context-Aware Checklist
 
 When a hospital is selected QuickAid generates a concise “what to bring” checklist:
 
@@ -57,11 +57,11 @@ When a hospital is selected QuickAid generates a concise “what to bring” che
 
 This helps users stay organised during stressful emergencies.
 
-### 🌍 Multilingual Snap-Switch (Arabic ↔ English)
+### Multilingual Snap-Switch
 
-One-tap language switch for international accessibility (initially Arabic ↔ English).
+One-tap language switch for international accessibility.
 
-### 📘 After-Visit Guidance
+### After-Visit Guidance
 
 After the emergency visit QuickAid provides practical next steps:
 
@@ -71,7 +71,7 @@ After the emergency visit QuickAid provides practical next steps:
 
 ---
 
-## 🧠 Why QuickAid Matters
+## Why QuickAid Matters
 
 International students and newcomers often face:
 
@@ -85,25 +85,16 @@ QuickAid makes UK emergency care faster, clearer, and more accessible.
 
 ---
 
-## 🛠 Tech Stack
-- Vite + TypeScript as the build tool and language setup.
-- React 18 with React Router DOM for the SPA UI layer.
-- Tailwind CSS plus shadcn/ui (Radix-based components) for styling.
-- TanStack React Query + Supabase JS for data fetching/storage.
+## Tech Stack
+- Vite + TypeScript
+- React
+- Tailwind CSS
 - Mapbox GL, Recharts, React Hook Form/Zod, and various Radix primitives to cover maps, charts, and form handling.
 
 
-## 👥 Team
+## Team
 
 - Yuzhen (Max) Yang
 - Shian (Andy) Ye
 - Sarah Asulaim
 - Zhewen (Ryan) Zheng
-
----
-
-## ⭐ Pitch Summary
-
-QuickAid doesn’t just show nearby hospitals — it uses AI to filter, rank, and recommend the emergency department that will treat you fastest based on real-time crowd levels, travel time, accessibility, and your insurance profile.
-
----
