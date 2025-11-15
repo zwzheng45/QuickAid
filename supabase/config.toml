@@ -1,0 +1,10 @@
+project_id = "mlqgrsnmvwzhecsmvqtb"
+
+[functions.calculate-travel-times]
+verify_jwt = false
+
+[functions.generate-hospital-recommendation]
+verify_jwt = false
+
+[functions.get-mapbox-token]
+verify_jwt = false

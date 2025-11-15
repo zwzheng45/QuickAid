@@ -1,0 +1,166 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Vibrant Blue Color Palette */
+    --background: 210 45% 95%;
+    --foreground: 215 50% 25%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 50% 25%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 50% 25%;
+
+    /* Rich Blue - Primary */
+    --primary: 215 60% 40%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 210 55% 70%;
+    --primary-dark: 215 65% 28%;
+
+    --secondary: 210 50% 88%;
+    --secondary-foreground: 215 50% 25%;
+
+    --muted: 210 40% 82%;
+    --muted-foreground: 215 45% 38%;
+
+    --accent: 210 65% 58%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Status colors */
+    --destructive: 0 84% 42%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --border: 210 40% 85%;
+    --input: 210 40% 90%;
+    --ring: 215 60% 40%;
+
+    --radius: 0.75rem;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(215 60% 40%), hsl(210 65% 55%));
+    --gradient-secondary: linear-gradient(180deg, hsl(210 45% 95%), hsl(210 50% 88%));
+    --gradient-card: linear-gradient(135deg, hsl(0 0% 100%), hsl(210 45% 95%));
+    --gradient-urgent: linear-gradient(135deg, hsl(0 65% 45%), hsl(0 75% 52%));
+
+    /* Shadows */
+    --shadow-sm: 0 2px 8px hsl(215 60% 40% / 0.08);
+    --shadow-md: 0 4px 16px hsl(215 60% 40% / 0.12);
+    --shadow-lg: 0 8px 32px hsl(215 60% 40% / 0.16);
+    --shadow-accent: 0 8px 32px hsl(210 65% 58% / 0.25);
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 215 50% 25%;
+    --sidebar-primary: 215 60% 40%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 50% 88%;
+    --sidebar-accent-foreground: 215 50% 25%;
+    --sidebar-border: 210 40% 85%;
+    --sidebar-ring: 215 60% 40%;
+  }
+
+  .dark {
+    /* Dark Blue Mode */
+    --background: 215 30% 15%;
+    --foreground: 210 20% 94%;
+
+    --card: 215 25% 18%;
+    --card-foreground: 210 20% 94%;
+
+    --popover: 215 25% 18%;
+    --popover-foreground: 210 20% 94%;
+
+    --primary: 210 30% 65%;
+    --primary-foreground: 215 30% 15%;
+    --primary-light: 210 30% 75%;
+    --primary-dark: 215 30% 25%;
+
+    --secondary: 215 25% 25%;
+    --secondary-foreground: 210 20% 94%;
+
+    --muted: 215 20% 30%;
+    --muted-foreground: 210 20% 75%;
+
+    --accent: 215 25% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --border: 215 20% 30%;
+    --input: 215 20% 30%;
+    --ring: 210 30% 65%;
+
+    /* Dark mode gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(210 30% 65%), hsl(215 25% 50%));
+    --gradient-secondary: linear-gradient(180deg, hsl(215 30% 15%), hsl(215 25% 18%));
+    --gradient-card: linear-gradient(135deg, hsl(215 25% 18%), hsl(215 25% 22%));
+    --gradient-urgent: linear-gradient(135deg, hsl(0 65% 35%), hsl(0 75% 42%));
+
+    /* Dark shadows */
+    --shadow-sm: 0 2px 8px hsl(0 0% 0% / 0.3);
+    --shadow-md: 0 4px 16px hsl(0 0% 0% / 0.4);
+    --shadow-lg: 0 8px 32px hsl(0 0% 0% / 0.5);
+    --shadow-accent: 0 8px 32px hsl(210 30% 65% / 0.3);
+
+    --sidebar-background: 215 25% 18%;
+    --sidebar-foreground: 210 20% 94%;
+    --sidebar-primary: 210 30% 65%;
+    --sidebar-primary-foreground: 215 30% 15%;
+    --sidebar-accent: 215 20% 30%;
+    --sidebar-accent-foreground: 210 20% 94%;
+    --sidebar-border: 215 20% 30%;
+    --sidebar-ring: 210 30% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    background: linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--secondary)) 100%);
+    min-height: 100vh;
+  }
+
+  /* Utility classes for gradients */
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+
+  .gradient-card {
+    background: var(--gradient-card);
+  }
+
+  .gradient-urgent {
+    background: var(--gradient-urgent);
+  }
+
+  .shadow-elegant {
+    box-shadow: var(--shadow-md);
+  }
+
+  .shadow-accent {
+    box-shadow: var(--shadow-accent);
+  }
+}
