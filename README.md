@@ -94,7 +94,7 @@ QuickAid makes UK emergency care faster, clearer, and more accessible.
 
 ## Team
 
-- Yuzhen (Max) Yang
-- Shian (Andy) Ye
-- Sarah Asulaim
-- Zhewen (Ryan) Zheng
+- [Yuzhen (Max) Yang](https://github.com/XxXaurora0821)
+- [Shian (Andy) Ye](https://github.com/yeshian24905-maker)
+- [Sarah Asulaim](https://github.com/SarahAlsulaim)
+- [Zhewen (Ryan) Zheng](https://github.com/zwzheng45)
