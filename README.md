@@ -1,6 +1,6 @@
 # QuickAid — Emergency Navigation App
 
-QuickAid is an emergency navigation tool designed to help international students, newcomers, and residents quickly find the fastest and most appropriate emergency department (A&E) during a medical crisis.
+QuickAid is an emergency navigation tool designed to help international students, newcomers, and residents quickly find the fastest and most appropriate emergency department during a medical crisis.
 
 ---
 
